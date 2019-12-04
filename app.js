@@ -72,6 +72,10 @@ app.get("/404", function(req, res) {
   res.render("404");
 }); 
 
+app.get("/maintenance", function(req, res) {
+  res.render("maintenance");
+});
+
 app.post('/login', function (req, res) {
   let authenticated = false;
   let user;
